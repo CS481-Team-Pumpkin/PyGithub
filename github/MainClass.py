@@ -456,7 +456,10 @@ class Github:
         query_chunks = []
         if query:  # pragma no branch (Should be covered)
             query_chunks.append(query)
-
+        # remove punctuation from query_chunks
+        # add logical and to text chunks
+        # add other possible permeatations for uppercase/lowercase
+        
         for qualifier, value in qualifiers.items():
             query_chunks.append(f"{qualifier}:{value}")
 
